@@ -1,0 +1,8 @@
+{# This file: templates/dataset/extended_details.html #}
+{% block dataset_extra %}
+  <div id="extended-dataset-details">
+    <h2>Extended Dataset Details</h2>
+    <p>This section provides additional information about the dataset.</p>
+    {{ extended_details(dataset)|safe }}
+  </div>
+{% endblock %}

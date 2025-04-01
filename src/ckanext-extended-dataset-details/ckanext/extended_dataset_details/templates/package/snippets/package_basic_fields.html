@@ -1,0 +1,24 @@
+{% ckan_extends %}
+{% block package_basic_fields_custom %}
+  {{ form.input('custom_text',
+                 label=_('Custom Text'),
+                 id='field-custom_text',
+                 placeholder=_('Enter custom text'),
+                 value=data.custom_text,
+                 error=errors.custom_text,
+                 classes=['control-medium']) }}
+
+  <div class="control-group">
+    <label class="form-label" for="field-country_code">{{ _("Country Code") }}</label>
+    <div class="controls">
+      <select id="field-country_code" name="country_code">
+        {% for code in h.country_codes() %}
+          <option value="{{ code }}"
+                  {% if data.country_code and code in data.country_code %}selected="selected"{% endif %}>
+            {{ code }}
+          </option>
+        {% endfor %}
+      </select>
+    </div>
+  </div>
+{% endblock %}

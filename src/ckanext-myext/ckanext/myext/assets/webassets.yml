@@ -1,0 +1,14 @@
+# myext-js:
+#   filter: rjsmin
+#   output: ckanext-myext/%(version)s-myext.js
+#   contents:
+#     - js/myext.js
+#   extra:
+#     preload:
+#       - base/main
+
+# myext-css:
+#   filter: cssrewrite
+#   output: ckanext-myext/%(version)s-myext.css
+#   contents:
+#     - css/myext.css

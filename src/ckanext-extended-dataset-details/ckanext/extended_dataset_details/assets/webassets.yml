@@ -1,0 +1,14 @@
+# extended_dataset_details-js:
+#   filter: rjsmin
+#   output: ckanext-extended_dataset_details/%(version)s-extended_dataset_details.js
+#   contents:
+#     - js/extended_dataset_details.js
+#   extra:
+#     preload:
+#       - base/main
+
+# extended_dataset_details-css:
+#   filter: cssrewrite
+#   output: ckanext-extended_dataset_details/%(version)s-extended_dataset_details.css
+#   contents:
+#     - css/extended_dataset_details.css
