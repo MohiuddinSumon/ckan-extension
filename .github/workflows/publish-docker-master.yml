@@ -1,7 +1,8 @@
 name: Build and publish the master docker-ckan image
 on:
-  schedule:
-    - cron: '15 5 * * *'
+  push:
+  # schedule:
+  #   - cron: '15 5 * * *'
 
 jobs:
   build:
